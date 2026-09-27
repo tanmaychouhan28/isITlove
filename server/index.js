@@ -44,11 +44,12 @@ async function startServer() {
   let connected = false;
   if (mongoUri && !mongoUri.includes('127.0.0.1') && !mongoUri.includes('localhost')) {
     try {
-      await mongoose.connect(mongoUri, { serverSelectionTimeoutMS: 3000 });
-      console.log('Connected to external MongoDB');
+      await mongoose.connect(mongoUri, { serverSelectionTimeoutMS: 10000 });
+      console.log('Connected to external MongoDB (Atlas)');
       connected = true;
     } catch (e) {
-      console.log('External MongoDB connection failed, falling back to in-memory...');
+      console.log('External MongoDB connection failed:', e.message);
+      console.log('Falling back to in-memory / local MongoDB...');
     }
   }
 
