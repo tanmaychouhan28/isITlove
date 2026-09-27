@@ -1,0 +1,14 @@
+{
+  "name": "isitlove",
+  "version": "1.0.0",
+  "description": "isITlove - Developer Dating App with GitHub, LeetCode & LinkedIn integration",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "install-all": "cd server && npm install && cd ../client && npm install"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
