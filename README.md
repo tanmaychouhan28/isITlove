@@ -196,9 +196,9 @@ That's it. Render builds the client and starts the server. 🎉
 
 ---
 
-## 👥 Authors
+##  Author
 
-Built with ❤️ by **Tanmay** & **Yug**
+Built with ❤️ by **Tanmay**
 
 ---
 
